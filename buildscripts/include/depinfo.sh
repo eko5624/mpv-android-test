@@ -14,6 +14,8 @@ v_harfbuzz=4.3.0
 v_fribidi=1.0.12
 v_freetype=2-12-1
 v_mbedtls=2.28.0
+v_openssl=1.1.1n
+v_python=3.9.12
 
 
 ## Dependency tree
@@ -31,7 +33,9 @@ dep_shaderc=()
 dep_libepoxy=()
 dep_libplacebo=(shaderc libepoxy)
 dep_mpv=(ffmpeg libass lua libplacebo)
-dep_mpv_android=(mpv)
+dep_openssl=()
+dep_python=(openssl)
+dep_mpv_android=(mpv python)
 
 
 ## Travis-related
