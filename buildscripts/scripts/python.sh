@@ -13,7 +13,7 @@ else
 fi
 
 # TODO figure this out
-if [[ -z "$DOIT" && "$ndk_triple" != "arm"* ]]; then
+if [[ -z "$mpvarchoverride" && "$ndk_triple" != "arm"* ]]; then
 	echo "Skipping build for $ndk_triple, only supposed to run on ARM (for now)"
 	echo "To build anyway set DOIT=1 env variable"
 	exit 0

@@ -120,11 +120,12 @@ build () {
 usage () {
 	echo "Usage: buildall.sh [options] [target]"
 	echo "Builds the specified target (default: $target)"
+	echo "Setting the enviroment variable 'mpvarchoverride=[target]' will override default architecture"
+	echo "Running buildall.sh after setting mpvarchoverride=arm64 will build only arm64. Accepts same arguments as --arch" 
 	echo "-n             Do not build dependencies"
 	echo "--clean        Clean build dirs before compiling"
 	echo "--gcc          Use gcc compiler (unsupported!)"
 	echo "--arch <arch>  Build for specified architecture (default: $arch; supported: armv7l, arm64, x86_64)"
-	echo "--no32 <arch>	 Build only for specified architecture (supported: armv7l, arm64, x86_64)"
 	exit 0
 }
 
