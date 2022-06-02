@@ -40,7 +40,7 @@ jobs:
            #rm -rf sdkmanager /usr/local/lib/android/sdk/ndk-bundle
     - name: Install NDK
       #run: sdkmanager --list
-      run: sdkmanager "ndk;23.2.8568313"
+      run: sdkmanager "ndk;23.1.7779620"
     - name: download-deps
       working-directory: ./buildscripts
       run: |
