@@ -39,7 +39,7 @@ jobs:
       run: sdkmanager --uninstall "ndk;21.4.7075529"
            rm -rf sdkmanager /usr/local/lib/android/sdk/ndk-bundle
     - name: Install NDK
-      run: sdkmanager "ndk;25.0.8528842-beta4"
+      run: sdkmanager "ndk;23.2.8568313"
     - name: download-deps
       working-directory: ./buildscripts
       run: |
@@ -102,7 +102,7 @@ jobs:
         run: sdkmanager --uninstall "ndk;21.4.7075529"
              rm -rf sdkmanager /usr/local/lib/android/sdk/ndk-bundle
       - name: Install NDK
-        run: sdkmanager "ndk;25.0.8528842-beta4"
+        run: sdkmanager "ndk;23.2.8568313"
       - name: download-deps
         working-directory: ./buildscripts
         run: |
@@ -163,7 +163,7 @@ jobs:
         run: sdkmanager --uninstall "ndk;21.4.7075529"
              rm -rf sdkmanager /usr/local/lib/android/sdk/ndk-bundle
       - name: Install NDK
-        run: sdkmanager "ndk;25.0.8528842-beta4"
+        run: sdkmanager "ndk;23.2.8568313"
       - name: download-deps
         working-directory: ./buildscripts
         run: |
