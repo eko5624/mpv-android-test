@@ -24,6 +24,6 @@ if [ -n "$ndk_triple" ]; then
 fi
 
 SDK=/usr/local/lib/android/sdk
-NDK=$SDK/ndk/24.0.8215888
+NDK=$SDK/ndk/23.2.8568313
 toolchain=$(echo "$NDK/toolchains/llvm/prebuilt/"*)
 export PATH="$toolchain/bin:$NDK:$SDK/bin:$PATH"
