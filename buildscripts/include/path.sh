@@ -23,7 +23,12 @@ if [ -n "$ndk_triple" ]; then
 	unset PKG_CONFIG_PATH
 fi
 
+if [$ISGIT == "yes" ]; then 
 SDK=/usr/local/lib/android/sdk
+else
+SDK=/opt/android-sdk
+fi
+
 NDK=$SDK/ndk/24.0.8215888
 toolchain=$(echo "$NDK/toolchains/llvm/prebuilt/"*)
 export PATH="$toolchain/bin:$NDK:$SDK/bin:$PATH"

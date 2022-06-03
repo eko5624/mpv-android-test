@@ -44,6 +44,7 @@ jobs:
       working-directory: ./buildscripts
       run: |
         export mpvarchoverride=armv7l
+        export ISGIT=yes
         chmod +x github-prepare.sh
         ./github-prepare.sh
     - name: build-apk
@@ -107,6 +108,7 @@ jobs:
         working-directory: ./buildscripts
         run: |
           export mpvarchoverride=x86_64
+          export ISGIT=yes
           chmod +x github-prepare.sh
           ./github-prepare.sh x86_64
       - name: build-apk
@@ -168,6 +170,7 @@ jobs:
         working-directory: ./buildscripts
         run: |
           export mpvarchoverride=arm64
+          export ISGIT=yes
           chmod +x github-prepare.sh
           ./github-prepare.sh arm64
       - name: build-apk
