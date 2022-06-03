@@ -50,6 +50,8 @@ jobs:
     - name: build-apk
       working-directory: ./buildscripts
       run:  |
+        echo $NDK
+        echo $ISGIT
         ./buildall.sh -n
     - name: relocate apks
       run: |
