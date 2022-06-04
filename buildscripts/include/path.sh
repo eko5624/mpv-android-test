@@ -23,7 +23,8 @@ if [ -n "$ndk_triple" ]; then
 	unset PKG_CONFIG_PATH
 fi
 
-if [ $ISGIT == "yes" ]; then 
+if [ "$ISGIT" == "yes" ]; then 
+
 SDK=/usr/local/lib/android/sdk
 else
 SDK=/opt/android-sdk
