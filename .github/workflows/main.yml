@@ -40,9 +40,9 @@ jobs:
            rm -rf sdkmanager /usr/local/lib/android/sdk/ndk-bundle
     - name: Install NDK
       run: | 
-      sdkmanager "ndk;23.2.8568313"
-      cp -n /opt/android-sdk/ndk/23.2.8568313/sources/third_party/vulkan/src/include/vulkan/* \
-     /opt/android-sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/vulkan/
+        sdkmanager "ndk;23.2.8568313"
+        cp -n /opt/android-sdk/ndk/23.2.8568313/sources/third_party/vulkan/src/include/vulkan/* \
+        /opt/android-sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/vulkan/
     - name: download-deps
       working-directory: ./buildscripts
       run: |
@@ -109,9 +109,9 @@ jobs:
              rm -rf sdkmanager /usr/local/lib/android/sdk/ndk-bundle
       - name: Install NDK
         run: |
-        sdkmanager "ndk;23.2.8568313"
-        cp -n /opt/android-sdk/ndk/23.2.8568313/sources/third_party/vulkan/src/include/vulkan/* \
-        /opt/android-sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/vulkan/
+          sdkmanager "ndk;23.2.8568313"
+          cp -n /opt/android-sdk/ndk/23.2.8568313/sources/third_party/vulkan/src/include/vulkan/* \
+          /opt/android-sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/vulkan/
       - name: download-deps
         working-directory: ./buildscripts
         run: |
@@ -174,9 +174,9 @@ jobs:
              rm -rf sdkmanager /usr/local/lib/android/sdk/ndk-bundle
       - name: Install NDK
         run: |
-        sdkmanager "ndk;23.2.8568313"
-        cp -n /opt/android-sdk/ndk/23.2.8568313/sources/third_party/vulkan/src/include/vulkan/* \
-        /opt/android-sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/vulkan/
+          sdkmanager "ndk;23.2.8568313"
+          cp -n /opt/android-sdk/ndk/23.2.8568313/sources/third_party/vulkan/src/include/vulkan/* \
+          /opt/android-sdk/ndk/23.2.8568313/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/vulkan/
       - name: download-deps
         working-directory: ./buildscripts
         run: |
