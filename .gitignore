@@ -1,7 +1,6 @@
 .gdb_history
 bin
 gen
-Dockerfile
 libs
 obj
 .gradle

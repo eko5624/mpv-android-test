@@ -10,6 +10,7 @@ target=mpv-android
 
 if [ -z $mpvarchoverride ]
 then
+#override to arm64 if you get arm incompatibility issues
 arch=armv7l
 else
 arch=$mpvarchoverride
