@@ -4,6 +4,7 @@ RUN dnf -y update && \
     dnf -y groupinstall "Development Tools" && \
     dnf -y install \
     	which python3-mako nasm \
+        perl-FindBin python3.9 \
         autoconf \
         pkgconfig \
         libtool \
