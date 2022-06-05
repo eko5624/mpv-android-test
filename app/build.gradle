@@ -11,7 +11,6 @@ android {
         targetSdkVersion 30
         versionCode 28
         versionName "2022-03-23-release"
-
         vectorDrawables.useSupportLibrary = true
     }
 
