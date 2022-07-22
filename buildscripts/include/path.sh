@@ -34,3 +34,4 @@ NDK=$SDK/ndk/23.2.8568313
 toolchain=$(echo "$NDK/toolchains/llvm/prebuilt/"*)
 #vkbeta=$(echo "$NDK/sources/third_party/vulkan/src/include/vulkan/")
 export PATH="$vkbeta:$toolchain/bin:$NDK:$SDK/bin:$PATH"
+
