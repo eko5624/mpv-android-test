@@ -35,7 +35,7 @@ class YtdlUpdateDialog @JvmOverloads constructor(
 
         binding.info.movementMethod = ScrollingMovementMethod()
         binding.installBtn.setOnClickListener {
-            with (AlertDialog.Builder(context, R.style.FilePickerAlertDialogTheme)) {
+            with (AlertDialog.Builder(context, R.style.FilePickerTheme_AlertDialog)) {
                 setSingleChoiceItems(setupChoices, -1) { dialog, item ->
                     val choice = setupChoices[item]
                     dialog.dismiss()

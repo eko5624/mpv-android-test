@@ -36,7 +36,9 @@ class YtdlFormatPreference @JvmOverloads constructor(
         val qualityStrings = qualityLevels.map {
             if (it == -1) context.getString(R.string.quality_any) else "${it}p"
         }
-        binding.spinner1.adapter = ArrayAdapter(context, R.layout.scaler_pref_textview, qualityStrings)
+        binding.spinner1.adapter = ArrayAdapter(context, android.R.layout.simple_spinner_item, qualityStrings).apply {
+            setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        }
         val idx = qualityLevels.indexOf(selectedQuality)
         if (idx != -1)
             binding.spinner1.setSelection(idx, false)
