@@ -4,6 +4,16 @@
 
 mpv-android is a video player for Android based on [libmpv](https://github.com/mpv-player/mpv).
 
+##
+Docker instructions
+    docker build . -t mpv-vk 
+    docker run --rm -it -v $(pwd):/build mpv-vk /bin/bash
+    export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+    export ANDROID_SDK_ROOT=/opt/android-sdk
+    cd buildscripts
+    ./github-prepare.sh arm64
+    ./buildall.sh
+
 ## Features
 
 * Hardware and software video decoding
