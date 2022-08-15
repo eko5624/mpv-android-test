@@ -31,6 +31,7 @@ echo "ndk"
 echo $ndk_vulkan
 
 unset CC CXX
+git submodule update --init
 meson $build --cross-file "$prefix_dir"/crossfile.txt \
 	-Dvulkan-registry="$ndk_vulkan/src/registry/vk.xml" -Ddemos=false -Dopengl=enabled
 
