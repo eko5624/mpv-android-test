@@ -60,8 +60,9 @@ HEREDOC
 # libplacebo
 [ ! -d libplacebo ] && git clone https://github.com/haasn/libplacebo
 
-# libepoxy
-[ ! -d libepoxy ] && git clone https://github.com/anholt/libepoxy.git
+# fdkaac
+[ ! -d fdkaac ] && git clone https://github.com/mstorsjo/fdk-aac.git fdkaac
+
 # mpv
 [ ! -d mpv ] && git clone https://github.com/mpv-player/mpv
 
