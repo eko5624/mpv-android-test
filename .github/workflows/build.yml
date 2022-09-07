@@ -35,19 +35,20 @@ jobs:
       - name: remove default ndk  
         run: sdkmanager --uninstall "ndk;25.1.8937393"
              rm -rf sdkmanager /usr/local/lib/android/sdk/ndk-bundle
-
+             
+      #- name: Install NDK
+      #  run: sdkmanager "ndk;23.2.8568313"
+        
       - name: download-deps
         working-directory: ./buildscripts
         run: |
-          export mpvarchoverride=armv7l
-          chmod +x github-prepare.sh
-          ./github-prepare.sh
-    
+          ./download.sh
+          
       - name: build-apk
         working-directory: ./buildscripts
         run:  |
+          ./buildall.sh --clean
           ./buildall.sh -n
-    
       - name: relocate apks
         run: |
           mkdir -p app/build/outputs/apk/release
