@@ -75,7 +75,7 @@ else
 	$WGET "http://dl.google.com/android/repository/android-ndk-${v_ndk}-${os_ndk}.zip"
 	unzip -q "android-ndk-${v_ndk}-${os_ndk}.zip"
 	cp -n android-ndk-${v_ndk}/sources/third_party/vulkan/src/include/vulkan/* \ 
-	android-ndk-${v_ndk}/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/vulkan
+	  android-ndk-${v_ndk}/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/vulkan
 	rm "android-ndk-${v_ndk}-${os_ndk}.zip"
 fi
 if ! grep -qF "${v_ndk_n}" "android-ndk-${v_ndk}/source.properties"; then
